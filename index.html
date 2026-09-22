@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio de Guypreve Amour Damba, développeur web FullStack.">
+
+    <title>Guypreve Damba | Développeur Web FullStack</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                Damba<span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" data-i18n="nav-home">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="#about" data-i18n="nav-about">À propos</a>
+                </li>
+
+                <li>
+                    <a href="#skills" data-i18n="nav-skills">Compétences</a>
+                </li>
+
+                <li>
+                    <a href="#projects" data-i18n="nav-projects">Projets</a>
+                </li>
+
+                <li>
+                    <a href="#contact" data-i18n="nav-contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <!-- Bouton de langue -->
+                <button
+                    id="language-toggle"
+                    class="control-button"
+                    type="button"
+                    aria-label="Changer de langue"
+                >
+                    EN
+                </button>
+
+                <!-- Bouton de thème -->
+                <button
+                    id="theme-toggle"
+                    class="control-button"
+                    type="button"
+                    aria-label="Activer le thème clair"
+                >
+                    ☀️
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Section Accueil -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-greeting" data-i18n="greeting">
+                    Salut, je suis
+                </p>
+
+                <h1>
+                    Guypreve Amour
+                    <span class="highlight">Damba</span>
+                </h1>
+
+                <h2 data-i18n="hero-title">
+                    Développeur Web Junior
+                </h2>
+
+                <p class="hero-description" data-i18n="hero-description">
+                    Je conçois des applications web modernes,
+                    fonctionnelles et accessibles.
+                    Découvrez mon parcours et mes réalisations.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="button button-primary"
+                        data-i18n="discover-projects"
+                    >
+                        Découvrir mes projets
+                    </a>
+
+                    <a
+                        href="#contact"
+                        class="button button-secondary"
+                        data-i18n="contact-me"
+                    >
+                        Me contacter
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Élément décoratif -->
+            <div class="hero-decoration" aria-hidden="true">
+
+                <div class="decoration-circle"></div>
+
+                <div class="code-card">
+                    <span>const developer = {</span>
+                    <br>
+                    <span>&nbsp;&nbsp;name: "Damba",</span>
+                    <br>
+                    <span>&nbsp;&nbsp;passion: "Web"</span>
+                    <br>
+                    <span>};</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section À propos -->
+        <section id="about" class="section">
+
+            <h2 data-i18n="about-title">À propos de moi</h2>
+
+            <p data-i18n="about-description">
+                Je suis passionné par le développement web et la
+                création de solutions numériques.
+                J'aime apprendre de nouvelles technologies et
+                réaliser des projets concrets.
+            </p>
+
+        </section>
+
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section">
+
+            <h2 data-i18n="skills-title">Mes compétences</h2>
+
+            <div class="skills-container">
+
+                <article class="skill-card">
+                    <h3>HTML</h3>
+                    <p data-i18n="skill-html">Structure des pages web</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>CSS</h3>
+                    <p data-i18n="skill-css">Design et responsive</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p data-i18n="skill-js">Interactions et logique</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Node.js</h3>
+                    <p data-i18n="skill-node">Développement backend</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Express</h3>
+                    <p data-i18n="skill-express">Création d'API et de serveurs</p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>PostgreSQL</h3>
+                    <p data-i18n="skill-postgres">Gestion des bases de données</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section Projets -->
+        <section id="projects" class="section">
+
+            <h2 data-i18n="projects-title">Mes projets</h2>
+
+            <article class="project-card">
+
+                <h3>Mini Format Factory</h3>
+
+                <p data-i18n="project-description">
+                    Une application web de conversion de fichiers
+                    audio et vidéo développée avec Node.js,
+                    Express et FFmpeg.
+                </p>
+
+                <div class="project-buttons">
+
+                    <a
+                        href="https://github.com/dgadev1492/mini-format-factory"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button button-secondary"
+                        data-i18n="source-code"
+                    >
+                        Code source
+                    </a>
+
+                    <!-- Remplacer par l'adresse réelle de Render -->
+                    <a
+                        href="https://mini-format-factory.onrender.com"
+                        class="button button-primary"
+                        data-i18n="live-demo"
+                    >
+                        Démo en ligne
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+
+            <h2 data-i18n="contact-title">Contact</h2>
+
+            <p data-i18n="contact-description">
+                Vous souhaitez discuter d'un projet ou me contacter ?
+                N'hésitez pas à me laisser un message.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer class="footer">
+
+        <p>
+            © <span id="current-year"></span>
+            Guypreve Amour Damba.
+            <span data-i18n="rights">Tous droits réservés.</span>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
